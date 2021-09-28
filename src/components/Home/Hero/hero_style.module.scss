@@ -1,0 +1,17 @@
+@import "../../../scss/base.scss";
+.hero {
+  background-color: $base-color;
+  height: 30vh;
+  @include container;
+  align-items: center;
+  div {
+    grid-column: 2/7;
+    padding: 1em;
+    h3 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.8em;
+    }
+  }
+}
