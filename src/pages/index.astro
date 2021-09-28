@@ -1,8 +1,7 @@
 ---
 // Component Imports
-import Tour from '../components/Tour.astro';
-import Banner from '../components/Banner.jsx';
 import Header from '../components/Header/Header.jsx'
+import Footer from '../components/Footer/Footer.jsx'
 
 
 
@@ -18,20 +17,12 @@ let title = 'My Astro Site';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/home.css">
-
-    <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            max-width: min(100%, 68ch);
-        }
-    </style>
 </head>
-<body>
+<body>    
+    <Header />
     <main>
-        <Header />
-        <Tour />
+    
     </main>
+     <Footer />
 </body>
 </html>

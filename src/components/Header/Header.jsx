@@ -3,17 +3,15 @@ import Styles from "./styles.module.scss";
 
 export default function Header() {
     return (
-        <>
+        <header className={Styles.header}>
             <div>
-                <div>
-                    <img />
-                    <p></p>
-                </div>
-                <nav>
-                    <button>About Us</button>
-                    <button>Projects</button>
-                </nav>
+                <img />
+                <p>Climenhaga Systems</p>
             </div>
-        </>
+            <nav className={Styles.nav}>
+                <a>About Us</a>
+                <a>Projects</a>
+            </nav>
+        </header>
     );  
 }
