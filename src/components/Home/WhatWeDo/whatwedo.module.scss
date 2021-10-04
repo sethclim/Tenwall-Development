@@ -1,0 +1,13 @@
+@import "../../../scss/base.scss";
+.WhatWeDo {
+  @include container();
+  .right {
+    grid-column: 2/7;
+  }
+  .left {
+    grid-column: 7/12;
+    width: 100%;
+    background-color: aquamarine;
+    text-align: center;
+  }
+}

@@ -1,7 +1,7 @@
 @import "../../../scss/base.scss";
 .hero {
   background-color: $base-color;
-  height: 30vh;
+  height: 40vh;
   @include container;
   align-items: center;
   div {

@@ -1,3 +1,4 @@
+@import "../../scss/base.scss";
 .header {
   background-color: black;
   width: 100vw;
@@ -6,9 +7,12 @@
   align-items: center;
   height: 5em;
 
+  @include container;
+
   div {
     display: flex;
     flex-direction: row;
+    grid-column: 1/2;
     img {
       width: 3em;
       height: auto;
@@ -20,8 +24,8 @@
 }
 
 .nav {
-  margin-left: 3em;
   color: white;
+  grid-column: 3/5;
 
   a {
     font-size: 0.8rem;
