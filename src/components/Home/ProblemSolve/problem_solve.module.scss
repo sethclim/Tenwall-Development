@@ -1,0 +1,6 @@
+@import "../../../scss/base.scss";
+.problemsolve {
+  height: 20vh;
+  @include container();
+  background-color: $background-color;
+}

@@ -1,5 +1,21 @@
 @import "../../../scss/base.scss";
 
+.reviewWrap {
+  @include container;
+  height: 30vh;
+}
 .reviews {
-  @include container();
+  grid-column: 2/12;
+  background-color: aliceblue;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.review {
+  background-color: rgb(196, 255, 255);
+  padding: 1em;
 }

@@ -6,10 +6,11 @@ Author: Seth Climenhaga;
 
 //-----------Variables-----------//
 $base-color: #c6538c;
-$primary-color: #7630d9;
+$primary-color: #17a697;
 $secondary-color: #010d26;
-$background-color: hsl(0, 0%, 98%);
+$background-color: #f2f2f2;
 $error-color: red;
+$text: #262626;
 
 //-----------Mixins-----------//
 @mixin center-all() {

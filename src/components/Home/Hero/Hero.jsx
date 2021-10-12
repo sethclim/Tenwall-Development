@@ -5,8 +5,9 @@ export default function Hero() {
     return (
         <div className={Styles.hero}>
             <div>
-                <h3>Climenhaga Systems</h3>
-                <p>Custom Tailored Quality Systems</p>  
+                <p>We make it happen</p>
+                <h3>Websites Mobile Apps Branding</h3>  
+                <button className={Styles.CTA}>Book a Call</button>
             </div>
             
         </div>
