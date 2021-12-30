@@ -4,10 +4,28 @@ import Styles from "./problem_solve.module.scss";
 export default function ProblemSolve() {
     return (
         <div className={Styles.problemsolve}>
-            <div>
-                <h3>What we solve</h3>
-                <p>asdfasfasfasfasfadsfasfasdf</p>  
+            <div className={Styles.card1}>
+                <div className={Styles.msgWrap}>
+                    <h3>Take your site to the next level</h3>
+                    <p>Breath life into your site</p>
+                </div>
+            </div>   
+            <div className={Styles.card2}>
+                <div className={Styles.msgWrap}>
+                    <h3>Take your site to the next level</h3>
+                    <p>Breath life into your site</p>
+                </div>
+            </div>   
+            <div className={Styles.card3}>
+                <div className={Styles.msgWrap}>
+                    <h3>Take your site to the next level</h3>
+                    <p>Breath life into your site</p>
+                </div>
             </div>   
         </div>
     );  
 }
+
+
+
+

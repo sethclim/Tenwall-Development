@@ -1,6 +1,59 @@
 @import "../../../scss/base.scss";
 .problemsolve {
-  height: 50vh;
+  height: 100%;
   @include container();
   background-color: $background-color;
+}
+
+@mixin card() {
+  background-color: $primary_color;
+  grid-column: 3/11;
+  height: 30vh;
+  margin-top: 5em;
+  @include container();
+  box-shadow: rgba(26, 26, 26, 0.208) 4px 4px 15px 2px;
+  transition-duration: 1s;
+
+  padding-left: 2em;
+
+  .msgWrap {
+    margin-top: 3em;
+    grid-column: 1/8;
+
+    h3 {
+      font-size: 2em;
+    }
+    p {
+      margin-top: 0.6em;
+      margin-left: 4px;
+    }
+  }
+}
+
+.card1 {
+  @include card();
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+.card2 {
+  @include card();
+}
+
+.card3 {
+  @include card();
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+.card1:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card3:hover {
+  transform: scale(1.1, 1.1);
 }
