@@ -4,9 +4,12 @@ import Styles from "./styles.module.scss";
 export default function Header() {
     return (
         <header className={Styles.header}>
-            <div>
+            <div className={Styles.brandWrap}>
                 <img />
-                <p>Climenhaga Systems</p>
+                <div className={Styles.brandName}>
+                    <div className={Styles.mainName}>Climenhaga</div>
+                    <p>Software Solutions</p>
+                </div>
             </div>
             <nav className={Styles.nav}>
                 <a>About Us</a>

@@ -4,12 +4,12 @@ import phone from "../../../../public/assets/IMG/phone.jpg"
 import branding from "../../../../public/assets/IMG/branding.jpg"
 import web from "../../../../public/assets/IMG/web.jpg"
 
-export default function WhatWeDo() {
+export default function WhatWeDo(props) {
     return (
         <div className={Styles.WhatWeDo}>
             <div className={Styles.right}>
                 <h3>We provide Web app development</h3>
-                <p>Climenhaga Systems produces custom web solutions.  
+                <p>{props.name} produces custom web solutions.  
                 We specialize in modern up to date approachs in development.  
                 Bringing you fast and reposonive sites.    </p>  
             </div>

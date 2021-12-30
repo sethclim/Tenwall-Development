@@ -3,19 +3,50 @@
 .reviewWrap {
   @include container;
   height: 30vh;
+  margin: 0;
+  padding: 0;
 }
 .reviews {
-  grid-column: 2/12;
-  background-color: aliceblue;
+  grid-column: 1/13;
+  background-color: $background-color;
   color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 }
 
 .review {
-  background-color: rgb(196, 255, 255);
+  background-color: $primary_color;
   padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.509) 4px 4px 15px 2px;
+  height: 10em;
+  width: 20em;
+  padding: 2em;
+  color: white;
+  margin: 50px;
+  overflow: hidden;
+  border-radius: 0.8rem;
+
+  div {
+    @include center-v;
+    h3 {
+      margin-left: 10px;
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.review:hover {
+  filter: brightness(130%);
+}
+
+.review_img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 5em;
 }

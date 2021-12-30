@@ -22,6 +22,7 @@ body {
   justify-content: center; */
   background: #f9fafb;
   color: #111827;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {

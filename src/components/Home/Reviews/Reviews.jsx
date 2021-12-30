@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./reviews.module.scss";
+import icon from "../../../../public/assets/IMG/ICON.jpg"
 
 
 export default function Reviews() {
@@ -7,14 +8,17 @@ export default function Reviews() {
         <div className={Styles.reviewWrap}>
             <div className={Styles.reviews}>
                 <Review 
+                    img={icon}
                     title={"JOO JOO"} 
                     body={"asdfasfasfasfasjhfaksjfhajksfhjksfh"} 
                 />
                 <Review 
+                    img={icon}
                     title={"JOO JOO"} 
                     body={"asdfasfasfasfasjhfaksjfhajksfhjksfh"} 
                 />
                 <Review 
+                    img={icon}
                     title={"JOO JOO"} 
                     body={"asdfasfasfasfasjhfaksjfhajksfhjksfh"} 
                 />
@@ -23,10 +27,14 @@ export default function Reviews() {
     );  
 }
 
-const Review = ({title, body}) => {
+const Review = ({title, body, img}) => {
     return(
         <div className={Styles.review}>
-            <h3>{title}</h3>
+            <div>
+                <img className={Styles.review_img} src={img} />
+                <h3>{title}</h3>
+            </div>
+       
             <p>{body}</p> 
         </div>
     )
