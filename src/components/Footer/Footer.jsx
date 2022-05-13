@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <div className={Styles.footer}>
             <div>
-                <p>@Climenhaga Systems 2021</p>
+                <p>@Tenwall Development 2022</p>
                 <a>Facebook</a>
                 <a>Instagram</a>
             </div>
