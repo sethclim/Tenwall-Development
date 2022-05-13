@@ -1,12 +1,14 @@
 @import "../../scss/base.scss";
 .header {
   background-color: $background-color;
+  position: fixed;
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 5em;
   color: #262626;
+  z-index: 50;
 
   @include container;
 
@@ -25,7 +27,8 @@
 
 
       p {
-        font-size: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
         width: 100%;
       }
     }
