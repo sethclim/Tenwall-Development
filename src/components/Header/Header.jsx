@@ -6,11 +6,8 @@ export default function Header() {
     return (
         <header className={Styles.header}>
             <div className={Styles.brandWrap}>
-                <img src={logo} />
-                <div className={Styles.brandName}>
-                    <div className={Styles.mainName}>Climenhaga</div>
-                    <p>Software Solutions</p>
-                </div>
+                {/* <img src={logo} /> */}
+                <div className={Styles.mainName}>Tenwall Development</div>
             </div>
             <nav className={Styles.nav}>
                 <a>About Us</a>

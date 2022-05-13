@@ -7,6 +7,7 @@
 
 @mixin card() {
   background-color: $primary_color;
+  color: white;
   grid-column: 3/11;
   height: 30vh;
   margin-top: 5em;

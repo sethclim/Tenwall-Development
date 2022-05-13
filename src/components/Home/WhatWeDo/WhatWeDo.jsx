@@ -5,6 +5,17 @@ import branding from "../../../../public/assets/IMG/branding.jpg"
 import web from "../../../../public/assets/IMG/web.jpg"
 
 export default function WhatWeDo(props) {
+
+
+    const [active, setActive]= useState(null);
+
+    const handleMouseOver = (value) =>{
+        console.log("Over " + value)
+        setActive(value)
+    }
+
+
+
     return (
         <div className={Styles.WhatWeDo}>
             <div className={Styles.right}>
@@ -15,9 +26,9 @@ export default function WhatWeDo(props) {
             </div>
             <div className={Styles.left}>
                 <div className={Styles.cardWrap}>
-                    <Card title={"Websites"} content={"What we do"}  background={web}/>
-                    <Card title={"Apps"} content={"What we do"} background={phone}/>
-                    <Card title={"Branding"} content={"What we do"}  background={branding}/>
+                    <Card active={active} no={1} content={{data:["React", "Node", ".Net"]}} title={"Websites"} handleMouseOver={handleMouseOver}  background={web}/>
+                    <Card active={active} no={2} content={{data:["Android", "iOS", "React Native", "Flutter"]}} handleMouseOver={handleMouseOver} title={"Apps"}  background={phone}/>
+                    <Card active={active} no={3} content={{data:["Figma", "bye"]}} handleMouseOver={handleMouseOver} title={"Branding"}  background={branding}/>
                 </div>
             
             </div>
@@ -26,13 +37,19 @@ export default function WhatWeDo(props) {
     );  
 }
 
-const Card =  ({title, content, background}) =>{
+const Card =  ({title, no, content, background, active, handleMouseOver}) =>{
     return(
-        <div className={Styles.card}>
-            <img src={background} />
-            <div>
+        <div className={`${Styles.card} ${ active !== null ? (active === no) ? Styles.active : Styles.notActive : Styles.default}`} onMouseOver={() =>handleMouseOver(no)} onMouseLeave={() =>handleMouseOver(null)}>
+            {/* <img src={background} /> */}
+            <div className={Styles.content}>
                 <h3>{title}</h3>
-                <p>{content}</p>
+                <ul>
+                    {
+                        content.data.map( item =>{
+                            return <li>{item}</li>
+                        })
+                    }
+                </ul>
             </div>
         
         </div>  

@@ -7,7 +7,7 @@ export default function Hero() {
             <div>
                 <p>We make it happen</p>
                 <h3>Websites Mobile Apps Branding</h3>  
-                <button className={Styles.CTA}>Book a Call</button>
+                <button className={Styles.CTA}>Work With Us</button>
             </div>
             
         </div>
