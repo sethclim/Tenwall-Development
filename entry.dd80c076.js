@@ -1,4 +1,4 @@
-import{r as p}from"./chunks/chunk.5f28c498.js";const v="_WhatWeDo_1fsvu_6",x="_right_1fsvu_14",f="_left_1fsvu_32",h="_cardWrap_1fsvu_42",m="_card_1fsvu_42",W="_active_1fsvu_132",j="_notActive_1fsvu_156",y="_content_1fsvu_160";var o={WhatWeDo:v,right:x,left:f,cardWrap:h,card:m,default:"_default_1fsvu_111",active:W,notActive:j,content:y},t={exports:{}},l={};/**
+import{r as p}from"./chunks/chunk.5f55623c.js";const v="_WhatWeDo_1fsvu_6",x="_right_1fsvu_14",f="_left_1fsvu_32",h="_cardWrap_1fsvu_42",m="_card_1fsvu_42",W="_active_1fsvu_132",j="_notActive_1fsvu_156",y="_content_1fsvu_160";var o={WhatWeDo:v,right:x,left:f,cardWrap:h,card:m,default:"_default_1fsvu_111",active:W,notActive:j,content:y},t={exports:{}},l={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
