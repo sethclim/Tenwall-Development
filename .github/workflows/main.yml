@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: 56656904+sethclim@users.noreply.github.com
-  deployToRepo: sethclim.github.io
+  deployToRepo: /tenwall-development
 
 name: Github Pages Astro CI
 
