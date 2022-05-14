@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Styles from "./whatwedo.module.scss";
-import phone from "../../../../public/assets/IMG/phone.jpg"
-import branding from "../../../../public/assets/IMG/branding.jpg"
-import web from "../../../../public/assets/IMG/web.jpg"
+
 
 export default function WhatWeDo(props) {
 
@@ -26,9 +24,10 @@ export default function WhatWeDo(props) {
             </div>
             <div className={Styles.left}>
                 <div className={Styles.cardWrap}>
-                    <Card active={active} no={1} content={{data:["React", "Node", ".Net"]}} title={"Websites"} handleMouseOver={handleMouseOver}  background={web}/>
-                    <Card active={active} no={2} content={{data:["Android", "iOS", "React Native", "Flutter"]}} handleMouseOver={handleMouseOver} title={"Apps"}  background={phone}/>
-                    <Card active={active} no={3} content={{data:["Figma", "bye"]}} handleMouseOver={handleMouseOver} title={"Branding"}  background={branding}/>
+
+                    <Card active={active} no={1} content={{data:["React", "Node", ".Net"]}} title={"Websites"} handleMouseOver={handleMouseOver} />
+                    <Card active={active} no={2} content={{data:["Android", "iOS", "React Native", "Flutter"]}} handleMouseOver={handleMouseOver} title={"Apps"}  />
+                    <Card active={active} no={3} content={{data:["Figma", "bye"]}} handleMouseOver={handleMouseOver} title={"Branding"}  />
                 </div>
             
             </div>
@@ -45,8 +44,8 @@ const Card =  ({title, no, content, background, active, handleMouseOver}) =>{
                 <h3>{title}</h3>
                 <ul>
                     {
-                        content.data.map( item =>{
-                            return <li>{item}</li>
+                        content.data.map( (item, idx) =>{
+                            return <li key={idx}>{item}</li>
                         })
                     }
                 </ul>

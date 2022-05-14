@@ -7,6 +7,13 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.18.5"
+    "@astrojs/react": "^0.1.2",
+    "@babel/core": "^7.0.0-0",
+    "astro": "^1.0.0-beta.28",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
