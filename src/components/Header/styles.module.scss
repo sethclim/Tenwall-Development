@@ -1,6 +1,6 @@
 @import "../../scss/base.scss";
 .header {
-  background-color: $background-color;
+  background-color: #00000077;
   position: fixed;
   width: 100vw;
   display: flex;
@@ -38,7 +38,7 @@
 
 .mainName {
   font-size: 1.6em;
-  color: $primary-color;
+  color: #fff;
 }
 
 

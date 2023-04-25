@@ -1,14 +1,19 @@
 @import "../../../scss/base.scss";
-.hero {
+
+.outHero{
   background-color: $background-color;
   height: 80vh;
+}
+
+.hero {
+
   @include container;
   align-items: center;
   div {
-    grid-column: 2/13;
+    grid-column: 3/12;
 
     h3 {
-      color: $primary-color;
+      color: #fff;
       font-size: 4em;
     }
     p {

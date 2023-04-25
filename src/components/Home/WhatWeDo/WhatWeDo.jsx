@@ -17,10 +17,8 @@ export default function WhatWeDo(props) {
     return (
         <div className={Styles.WhatWeDo}>
             <div className={Styles.right}>
-                <h3>We provide Web app development</h3>
-                <p>{props.name} produces custom web solutions.  
-                We specialize in modern up to date approachs in development.  
-                Bringing you fast and reposonive sites.    </p>  
+                <p>We produces engaging experiences for your customers across all platforms.  Pulling on 
+                    years of creative knowlege and technical experience we deliviver best in class solutions.  </p>  
             </div>
             <div className={Styles.left}>
                 <div className={Styles.cardWrap}>

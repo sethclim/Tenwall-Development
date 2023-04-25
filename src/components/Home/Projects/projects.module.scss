@@ -1,0 +1,95 @@
+@import "../../../scss/base.scss";
+
+.problemsolve {
+  height: 100%;
+  @include container();
+  background-color: $background-color;
+}
+
+.projectGrid{
+  grid-column: 3/11;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.header{
+  grid-column: 3/11;
+  color: $primary-color;
+  margin-top: 50px;
+}
+
+.gridItem{
+  background-color: $primary-color;
+  height: 40vh;
+  position: relative;
+
+  overflow:  hidden;
+  border-radius: 1em;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contents{
+  padding: 25px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon{
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+@mixin card() {
+  background-color: $primary_color;
+  color: white;
+  grid-column: 3/11;
+  height: 30vh;
+  margin-top: 5em;
+  @include container();
+  box-shadow: rgba(26, 26, 26, 0.208) 4px 4px 15px 2px;
+  transition-duration: 1s;
+
+  padding-left: 2em;
+
+  .msgWrap {
+    margin-top: 3em;
+    grid-column: 1/8;
+
+    h3 {
+      font-size: 2em;
+    }
+    p {
+      margin-top: 0.6em;
+      margin-left: 4px;
+    }
+  }
+}
+
