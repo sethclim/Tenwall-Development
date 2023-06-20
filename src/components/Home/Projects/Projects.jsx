@@ -12,27 +12,28 @@ export default function ProblemSolve() {
                 <h1>Experiences</h1>
             </div>
             <div className={Styles.projectGrid}>
-                <ProjectGridItem name="Think Piano" />
-                <ProjectGridItem name="Seth Climenhaga Portfolio"/>
-                <ProjectGridItem name="Scales App"/>
+                <ProjectGridItem name="Think Piano" link="https://sethclim.github.io/think-piano/"/>
+                <ProjectGridItem name="Seth Climenhaga Portfolio" link="http://sethclimenhaga.com/"/>
+                <ProjectGridItem name="Scales App" link={`/Tenwall-Development/projects/scales-app`}/>
             </div>
         </div>
     );  
 }
 
 
-const ProjectGridItem = ({name}) =>{
+const ProjectGridItem = ({name, link}) =>{
     return(
-        <div className={Styles.gridItem} style={{ backgroundImage: `url(${Branding})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}  >
+        <a href={link} target='_blank'>
+            <div className={Styles.gridItem} style={{ backgroundImage: `url(${Branding})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}  >
 
-            <div className={Styles.overlay}>
-                <div className={Styles.contents}>
-                    <h3>{name}</h3>
-                    <Unicons.UilArrowUpRight size="50"  className={Styles.icon} />
+                <div className={Styles.overlay} >
+                    <div className={Styles.contents}>
+                        <h3>{name}</h3>
+                        <Unicons.UilArrowUpRight size="50"  className={Styles.icon} />
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </a>
     )
 }
 

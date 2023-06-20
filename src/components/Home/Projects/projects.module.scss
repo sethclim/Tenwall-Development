@@ -1,4 +1,9 @@
-@import "../../../scss/base.scss";
+@import "../../../styles/base.scss";
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
 
 .problemsolve {
   height: 100%;
